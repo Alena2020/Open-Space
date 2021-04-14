@@ -1,7 +1,5 @@
 body {
-  background-color: black;
-  padding-right: 100px;
-  padding-left: 100px;
+  background-image: url("img/space.png");
   margin: 0;
   font-family: "Bubblegum Sans", cursive;
 }
@@ -13,10 +11,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0;
 }
 
 .planet-area {
-  height: 700px;
+  height: 800px;
   width: 600px;
   display: flex;
   flex-direction: column;
@@ -24,9 +23,13 @@ body {
 }
 
 .planet {
-  height: 300px;
+  height: 100%;
   width: 600px;
   z-index: 1;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px aqua, 0 0 20px magenta, 0 0 60px midnightblue inset,
+    5px 5px 15px aqua, 0 0 20px magenta, 0 0 60px midnightblue inset;
+  margin: 0;
 }
 
 .rocket {
@@ -36,7 +39,6 @@ body {
   z-index: 2;
   position: absolute;
   left: 300px;
-  bottom: 125px;
 }
 
 .rocket:hover {
