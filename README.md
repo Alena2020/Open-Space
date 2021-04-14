@@ -1,4 +1,4 @@
-# Open-Space -  learning project JetBrains Academy
+# Open-Space -  JetBrains Academy project
 
 ## Technologies:
 #### - HTML
