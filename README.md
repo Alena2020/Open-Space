@@ -8,4 +8,4 @@
 
 ## Demo: https://alena2020.github.io/Open-Space/
 
-##  When all the check-buttons are checked and all the levers are set to the highest.  🌌🕹🚀🛸🛰 Launch the rocket, and feel like a real space engineer!
+##  To launch the rocket you should press the OK button to unlock checkboxes and levers. Then check all checkboxes and set all levers to the highest level  🌌🕹🚀🛸🛰 Launch the rocket, and feel like a real space engineer!
