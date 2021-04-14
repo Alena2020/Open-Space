@@ -1,7 +1,7 @@
 # Open-Space - yчебный проект JetBrains Academy
 ### Выполнила проект: Алёна
 
-## Технологии:
+## Technologies:
 #### - HTML
 #### - CSS 
 #### - JavaScript
