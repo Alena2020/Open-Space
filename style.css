@@ -1,0 +1,271 @@
+body {
+  background-color: black;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin: 0;
+  font-family: "Bubblegum Sans", cursive;
+}
+
+.space {
+  background-image: url("img/space.png");
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.planet-area {
+  height: 700px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.planet {
+  height: 300px;
+  width: 600px;
+  z-index: 1;
+}
+
+.rocket {
+  height: 150px;
+  width: 150px;
+  transform: rotate(35deg);
+  z-index: 2;
+  position: absolute;
+  left: 300px;
+  bottom: 125px;
+}
+
+.rocket:hover {
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px aqua, 0 0 20px magenta, 0 0 60px midnightblue inset;
+  cursor: pointer;
+}
+
+.control-panel {
+  height: 400px;
+  width: 600px;
+  background: radial-gradient(
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.15) 30%,
+        rgba(255, 255, 255, 0.3) 32%,
+        rgba(255, 255, 255, 0) 33%
+      )
+      0 0,
+    radial-gradient(
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.1) 11%,
+        rgba(255, 255, 255, 0.3) 13%,
+        rgba(255, 255, 255, 0) 14%
+      )
+      0 0,
+    radial-gradient(
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.2) 17%,
+        rgba(255, 255, 255, 0.43) 19%,
+        rgba(255, 255, 255, 0) 20%
+      )
+      0 110px,
+    radial-gradient(
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.2) 11%,
+        rgba(255, 255, 255, 0.4) 13%,
+        rgba(255, 255, 255, 0) 14%
+      ) -130px -170px,
+    radial-gradient(
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.2) 11%,
+        rgba(255, 255, 255, 0.4) 13%,
+        rgba(255, 255, 255, 0) 14%
+      )
+      130px 370px,
+    radial-gradient(
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.1) 11%,
+        rgba(255, 255, 255, 0.2) 13%,
+        rgba(255, 255, 255, 0) 14%
+      )
+      0 0,
+    linear-gradient(
+      45deg,
+      #343702 0%,
+      #184500 20%,
+      #187546 30%,
+      #006782 40%,
+      #0b1284 50%,
+      #760ea1 60%,
+      #83096e 70%,
+      #840b2a 80%,
+      #b13e12 90%,
+      #e27412 100%
+    );
+  background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px,
+    530px 530px, 730px 730px, 100% 100%;
+  background-color: #840b2a;
+
+  border-radius: 25px;
+  border: 1px solid midnightblue;
+  box-shadow: 5px 5px 15px aqua, 0 0 20px magenta, 0 0 60px midnightblue inset;
+  align-self: center;
+  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.control-panel__inner {
+  height: 300px;
+  width: 450px;
+  background-color: lightskyblue;
+  border-radius: 25px;
+  border: 1px solid midnightblue;
+  box-shadow: 5px 5px 15px aqua, 0 0 20px magenta, 5px 5px 15px aqua inset,
+    0 0 20px magenta inset, 0 0 60px midnightblue inset;
+  padding: 15px;
+}
+
+.login {
+  height: 35px;
+  width: 200px;
+  box-shadow: 5px 5px 15px aqua, 0 0 20px magenta;
+  margin-right: 40px;
+  margin-left: 50px;
+  padding-left: 40px;
+}
+
+input[type="button"] {
+  background-color: cyan;
+  color: #fff;
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 20px;
+  text-shadow: 0 0 2px mediumblue, -1px -1px 0 mediumblue,
+    -2px -2px 1px mediumblue;
+  border: 3px solid midnightblue;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px midnightblue, 0 0 15px midnightblue;
+  padding: 10px 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #0dd6f8;
+  border-color: aqua;
+  color: midnightblue;
+  box-shadow: 0 0 35px magenta inset;
+  text-shadow: 0 0 2px white, -2px -2px 1px lightcyan;
+}
+
+input[type="password"] {
+  border: 3px solid midnightblue;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px midnightblue, 0 0 15px midnightblue;
+  color: crimson;
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 20px;
+}
+
+.check-buttons {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: mediumspringgreen;
+  box-shadow: 2px 2px 3px midnightblue;
+  border-radius: 7px;
+  border: 3px solid aqua;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: yellow;
+  border: 2px solid mediumspringgreen;
+  box-shadow: 5px 5px 10px magenta, 0 0 15px lightpink;
+}
+
+input[type="checkbox"]:disabled {
+  background-color: silver;
+  box-shadow: 5px 5px 10px midnightblue, 0 0 15px midnightblue inset;
+}
+
+.levers {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 17px;
+  transform: rotate(-90deg);
+  box-shadow: 2px 2px 3px midnightblue;
+  background: mediumpurple;
+  border-radius: 7px;
+  border: 2px solid lightgreen;
+  cursor: pointer;
+}
+
+input[type="range"]:focus {
+  background-color: mediumvioletred;
+}
+
+input[type="range"]:active {
+  box-shadow: 2px 2px 3px midnightblue, 5px 5px 10px mediumblue,
+    0 0 12px midnightblue inset;
+  background-color: mediumvioletred;
+}
+
+input[type="range"]:disabled {
+  background-color: silver;
+  box-shadow: 5px 5px 10px midnightblue inset, 0 0 15px midnightblue inset;
+}
+
+.launch {
+  margin-top: 10px;
+  margin-left: 200px;
+}
+
+input[type="button"]:disabled {
+  background-color: silver;
+  color: white;
+  text-shadow: 0 0 2px mediumblue, -1px -1px 0 mediumblue,
+    -2px -2px 1px mediumblue;
+  border: 3px solid midnightblue;
+  box-shadow: 5px 5px 10px midnightblue inset, 0 0 15px midnightblue inset;
+}
+
+.reset {
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px aqua, 0 0 20px magenta, 0 0 60px midnightblue inset;
+  cursor: pointer;
+  height: 40px;
+  padding-top: 15px;
+  padding-left: 10px;
+  width: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: aqua;
+}
+
+a:hover {
+  color: magenta;
+}
