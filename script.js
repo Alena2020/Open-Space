@@ -122,7 +122,7 @@ function unCheck() {
 function control() {
   //console.log('START');
   disable();
-  buttonOk.addEventListener('click', () => enable()); 
+  buttonOk.addEventListener('click', () => checkPassword()); 
   //enable();
   unCheck();
   buttonLaunch.addEventListener('click', () => fly());   
