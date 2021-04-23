@@ -1,4 +1,5 @@
-# Open-Space -  JetBrains Academy project
+# Open-Space 
+My project from the JetBrains Academy Track: Frontend Developer.
 
 ## Technologies:
 #### - HTML
